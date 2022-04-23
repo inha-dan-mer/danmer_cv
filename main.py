@@ -2,7 +2,7 @@
 """
 Created on Sat Apr 23 15:04:48 2022
 
-@author: DaehaKim
+
 """
 import os
 cur_dir = os.getcwd()
