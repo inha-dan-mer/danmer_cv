@@ -46,7 +46,7 @@ if __name__ == "__main__":
        #similarity += distance.euclidean(tutor[j],dun[j]) 
         similarity += distance.euclidean(tutor[j],tutee[j]) 
     
-    similarity = similarity / (threshold*49*2)  
+    similarity = similarity / threshold
     
  
         
