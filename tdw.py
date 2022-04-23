@@ -12,7 +12,6 @@ from numpy.linalg import norm
 
 from scipy.spatial.distance import euclidean
 import dtw
-from fastdtw import fastdtw
 
 tutor = np.load('C:/Users/ksh76/capstone/save_tutor_coordin.npy')
 tutee = np.load('C:/Users/ksh76/capstone/save_tutee_coordin.npy')
