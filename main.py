@@ -5,25 +5,25 @@ Created on Sat Apr 23 15:04:48 2022
 @author: DaehaKim
 """
 import os
-import numpy as np
 cur_dir = os.getcwd()
-
+import numpy as np
 import torch
 from soft_dtw_cuda import SoftDTW
 
 
 tutor = np.load('danmer_cv-main/save_tutor_coordin.npy')
 tutee = np.load('danmer_cv-main/save_tutee_coordin.npy')[:627]
-dun = np.load('danmer_cv-main/save_dundun_coordin.npy')
+dun = np.load('danmer_cv-main/save_dundun_coordin.npy')[:627]
 
 tutor_th = torch.from_numpy(tutor).cuda()
 tutee_th = torch.from_numpy(tutee).cuda()
+dun_th = torch.from_numpy(dun).cuda()
 
-assert tutor_th.size(0) == tutee_th.size(0), "Match the length!"
+# assert tutor_th.size(0) == tutee_th.size(0), "Match the length!"
 
 
 sdtw = SoftDTW(use_cuda=True, gamma=0.1)
-dance_distance = sdtw(tutor_th, tutee_th) / 627
+dance_distance = sdtw(tutor_th,tutee_th) / 627
 
 
 
