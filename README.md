@@ -9,4 +9,6 @@ _https://github.com/Maghoumi/pytorch-softdtw-cuda#soft-dtw-for-pytorch-in-cuda �
 어떻게 자를건지 지금 짧은 프레임 기준으로 임의로 자른것임. moving window 기법쓸지 NN수정할지  
 dtw package에서와 cuda에서의 같은 경향성 보임 normalize의 차이만 존재함 따라서 프레임 임의로 잘라도 딱히 상관없을듯 아니 근데 프레임별로 오차를 보이려면....?
 
-
+---
+### 04/24
+_window avg 했는데 안한거보다 안정확함 그냥 임의로 잘라서 해도 될듯
