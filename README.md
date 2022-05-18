@@ -12,3 +12,14 @@ dtw package에서와 cuda에서의 같은 경향성 보임 normalize의 차이�
 ---
 ### 04/24
 _window avg 했는데 안한거보다 오차 크게 나옴 그냥 임의로 잘라서 해도 될듯
+
+---
+
+### 11주차
+body_25가 49 kp 보다 정확도 높고 시간 더 적게 나옴
+clustering으로 비교해 볼 예정
+
+---
+### 12주차
+clustering center ver vs closest ver -> 더 정확도 낮음 시간도 2분가량 더 소요
+static한 body_25가 더 나을듯
